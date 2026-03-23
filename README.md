@@ -68,8 +68,8 @@ No external dependencies (standard library only)
 
 1. Clone the repository
 ```
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone git@github.com:JonasRH355/Assignment_Connectivity.git
+cd Assignment_Connectivity
 ```
 
 3. Build the executable
