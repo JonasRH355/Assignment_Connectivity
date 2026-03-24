@@ -13,12 +13,22 @@ func NewGraph(directed bool) *Graph {
 	}
 }
 
-func (g *Graph) AddVertex() {
+func (g *Graph) AddVertex(v string) {
+	if _, exists := g.adj[v]; !exists {
+		g.adj[v] = []string{}
+	}
+}
+
+func (g *Graph) RemoveVertex(v string) {
 	return
 }
 
-func (g *Graph) RemoveVertex() { return }
+func (g *Graph) AddEdge(u, v string) {
+	g.adj[u] = append(g.adj[u], v)
 
-func (g *Graph) AddEdge() { return }
+	if !g.directed {
+		g.adj[u] = append(g.adj[v], u)
+	}
+}
 
 func (g *Graph) RemoveEdge() { return }
