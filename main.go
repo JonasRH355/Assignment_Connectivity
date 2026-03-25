@@ -9,10 +9,14 @@ func main() {
 	obj.AddVertex("a")
 	obj.AddVertex("b")
 	obj.AddVertex("c")
+	obj.AddVertex("d")
 
 	obj.AddEdge("a", "b")
-	obj.AddEdge("b", "c")
+	obj.AddEdge("b", "d")
 	obj.AddEdge("a", "c")
 
 	fmt.Println(obj.adj)
+
+	visited := make(map[string]bool)
+	obj.DFS("a", visited)
 }
