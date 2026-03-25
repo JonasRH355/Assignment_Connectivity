@@ -20,15 +20,43 @@ func (g *Graph) AddVertex(v string) {
 }
 
 func (g *Graph) RemoveVertex(v string) {
-	return
+	delete(g.adj, v)
+
+	for key, neighbors := range g.adj {
+		newList := []string{}
+		for _, n := range neighbors {
+			if n != v {
+				newList = append(newList, n)
+			}
+		}
+		g.adj[key] = newList
+	}
 }
 
 func (g *Graph) AddEdge(u, v string) {
 	g.adj[u] = append(g.adj[u], v)
 
 	if !g.directed {
-		g.adj[u] = append(g.adj[v], u)
+		g.adj[v] = append(g.adj[v], u)
 	}
 }
 
-func (g *Graph) RemoveEdge() { return }
+func (g *Graph) RemoveEdge(u, v string) {
+	newList := []string{}
+	for _, n := range g.adj[u] {
+		if n != v {
+			newList = append(newList, n)
+		}
+	}
+	g.adj[u] = newList
+
+	if !g.directed {
+		newList = []string{}
+		for _, n := range g.adj[v] {
+			if n != u {
+				newList = append(newList, n)
+			}
+		}
+		g.adj[v] = newList
+	}
+}
