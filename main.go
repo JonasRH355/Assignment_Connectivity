@@ -19,4 +19,7 @@ func main() {
 
 	visited := make(map[string]bool)
 	obj.DFS("a", visited)
+
+	fmt.Println("BFS:")
+	obj.BFS("a")
 }
