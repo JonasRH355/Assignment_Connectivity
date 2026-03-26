@@ -28,4 +28,12 @@ func main() {
 
 	fmt.Println("REV:")
 	rev.Print()
+
+	fmt.Println("is conected:")
+	obj.IsConnected()
+
+	fmt.Println("InverseTransitiveClosure:")
+	obj.InverseTransitiveClosure("a")
+	fmt.Println("InverseTransitiveClosure:")
+	rev.InverseTransitiveClosure("a")
 }

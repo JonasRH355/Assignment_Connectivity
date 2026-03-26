@@ -36,7 +36,27 @@ func (g *Graph) BFS(start string) {
 	}
 }
 
+func (g *Graph) IsConnected() bool {
+	visited := make(map[string]bool)
+
+	var start string
+	for k := range g.adj {
+		start = k
+		break
+	}
+
+	g.DFS(start, visited)
+
+	return len(visited) == len(g.adj)
+}
+
 func (g *Graph) TransitiveClosure(start string) {
 	visited := make(map[string]bool)
 	g.DFS(start, visited)
+}
+
+func (g *Graph) InverseTransitiveClosure(start string) {
+	rev := g.Reverse()
+	visited := make(map[string]bool)
+	rev.DFS(start, visited)
 }
