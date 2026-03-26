@@ -72,14 +72,26 @@ git clone git@github.com:JonasRH355/Assignment_Connectivity.git
 cd Assignment_Connectivity
 ```
 
-3. Build the executable
+2. Build the executable
 ```
 go build -o graph_app
 ```
 
-5. Run the program
+3. Run the program
 ```
 ./graph_app
+```
+<br> OU <br>
+
+1. Clone the repository
+```
+git clone git@github.com:JonasRH355/Assignment_Connectivity.git
+cd Assignment_Connectivity
+```
+
+2. Build and execute 
+```
+go run .
 ```
 
 <br>
