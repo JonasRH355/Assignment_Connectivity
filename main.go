@@ -22,4 +22,10 @@ func main() {
 
 	fmt.Println("BFS:")
 	obj.BFS("a")
+
+	rev := obj.Reverse()
+	rev.TransitiveClosure("a")
+
+	fmt.Println("REV:")
+	rev.Print()
 }

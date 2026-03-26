@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 type Graph struct {
 	adj      map[string][]string
 	directed bool
@@ -58,5 +62,23 @@ func (g *Graph) RemoveEdge(u, v string) {
 			}
 		}
 		g.adj[v] = newList
+	}
+}
+
+func (g *Graph) Reverse() *Graph {
+	rev := NewGraph(g.directed)
+
+	for u, neighbors := range g.adj {
+		for _, v := range neighbors {
+			rev.AddEdge(v, u)
+		}
+	}
+
+	return rev
+}
+
+func (g *Graph) Print() {
+	for k, v := range g.adj {
+		fmt.Println(k, "->", v)
 	}
 }

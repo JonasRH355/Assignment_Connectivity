@@ -35,3 +35,8 @@ func (g *Graph) BFS(start string) {
 		}
 	}
 }
+
+func (g *Graph) TransitiveClosure(start string) {
+	visited := make(map[string]bool)
+	g.DFS(start, visited)
+}
