@@ -102,14 +102,14 @@ go run .
 The program provides an interactive menu:
 <br>
 1. Add vertex
-2. Remove vertex
-3. Add edge
-4. Remove edge
-5. DFS traversal
-6. BFS traversal
-7. Transitive closure
-8. Check connectivity
-9. Strongly connected components
+2. Add edge
+3. DFS traversal
+4. BFS traversal
+5. Transitive closure
+6. Check connectivity
+7. Print graph
+8. Remove vertex
+9. Remove edge
 0. Exit
 
 <br>
@@ -140,18 +140,6 @@ Apply graph theory concepts in practice
 Understand traversal and connectivity algorithms
 Build a user-friendly interactive system
 Ensure code organization and maintainability
-
-<br>
-
----
-
-## 🎥 Demonstration
-
-A video demonstration is included showing:
-
-Program execution
-Feature walkthrough
-Explanation of implementation decisions
 
 <br>
 
