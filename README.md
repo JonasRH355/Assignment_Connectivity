@@ -19,34 +19,34 @@ The program allows users to:
 <br>
 
 ### 🧱 Graph Construction
-Create directed or undirected graphs
-Add and remove vertices
+Create directed or undirected graphs <br>
+Add and remove vertices <br>
 Add and remove edges (or arcs)
 <br>
 
 ### 🔍 Graph Traversal
-DFS (Depth-First Search)
-BFS (Breadth-First Search)
+DFS (Depth-First Search) <br>
+BFS (Breadth-First Search) <br>
 <br>
 
 ### 🔗 Connectivity Analysis
-Check if the graph is connected
-Identify maximal strongly connected subgraphs
+Check if the graph is connected <br>
+Identify maximal strongly connected subgraphs <br>
 
 <br>
 
 ---
 
 ### 🔁 Transitive Closure
-Direct closure: vertices reachable from a given node
-Inverse closure: vertices that can reach a given node
+Direct closure: vertices reachable from a given node <br>
+Inverse closure: vertices that can reach a given node <br>
 
 <br>
 
 ---
 
 ## 🛠️ Technologies Used
-Language: Go (Golang)
+Language: Go (Golang) <br>
 No external dependencies (standard library only)
 
 <br>
@@ -118,28 +118,28 @@ The program provides an interactive menu:
 
 ## 🧠 Algorithms Implemented
 <br>
-Depth-First Search (DFS)
-Explores as far as possible along each branch before backtracking.
-Breadth-First Search (BFS)
-Explores nodes level by level.
-Strongly Connected Components (SCC)
-Implemented using Kosaraju’s Algorithm:
-DFS to determine finishing order
-Graph reversal
-DFS on reversed graph
-Transitive Closure
-Computed using DFS/BFS from a given vertex
-Inverse closure uses graph reversal
+Depth-First Search (DFS) <br>
+Explores as far as possible along each branch before backtracking. <br>
+Breadth-First Search (BFS) <br>
+Explores nodes level by level. <br>
+Strongly Connected Components (SCC) <br>
+Implemented using Kosaraju’s Algorithm: <br>
+DFS to determine finishing order <br>
+Graph reversal <br>
+DFS on reversed graph <br>
+Transitive Closure <br>
+Computed using DFS/BFS from a given vertex <br>
+Inverse closure uses graph reversal <br>
 
 <br>
 
 ---
 
 ## 🎯 Objectives
-Apply graph theory concepts in practice
-Understand traversal and connectivity algorithms
-Build a user-friendly interactive system
-Ensure code organization and maintainability
+Apply graph theory concepts in practice <br>
+Understand traversal and connectivity algorithms <br>
+Build a user-friendly interactive system <br>
+Ensure code organization and maintainability <br>
 
 <br>
 
@@ -154,5 +154,5 @@ Leonardo de Borba Cardoso
 ---
 
 ## 📌 Notes
-The program is fully standalone and requires no external libraries
+The program is fully standalone and requires no external libraries <br>
 Designed for ease of use via command-line interface
