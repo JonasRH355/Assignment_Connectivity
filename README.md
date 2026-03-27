@@ -146,7 +146,7 @@ Ensure code organization and maintainability
 ---
 
 ## 👥 Team
-Jônatas Régis Hellmann
+Jônatas Régis Hellmann <br>
 Leonardo de Borba Cardoso
 
 <br>
